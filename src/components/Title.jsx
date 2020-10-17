@@ -6,7 +6,7 @@ function Title(props) {
 
     return (
         <h1>
-            Общее количество файлов: {length}
+            Общее количество файлов и директорий: {length}
         </h1>
     )
 }
