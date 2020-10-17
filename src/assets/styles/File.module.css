@@ -1,0 +1,45 @@
+.container {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 90%;
+    height: 50px;
+    border: 1px solid #cecece;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.container:hover {
+    border: 1px solid gray;
+}
+
+.name_container_left {
+    width: 150px;
+    align-items: center;
+    display: flex;
+}
+
+.date_container_right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+}
+
+.cirle_left {
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 3px solid #cecece;
+}
+
+.font_styles {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.file_name_right {
+    margin-left: 30px;
+}
