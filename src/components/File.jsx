@@ -5,6 +5,8 @@ import s from '../assets/styles/File.module.css';
 function File(props) {
 
     const { name, time, date } = { ...props };
+    const { hours, minutes, seconds } = { ...time };
+    const { year, month, day } = { ...date }
 
     return (
         <div className={s.container + ' ' + s.font_styles}>
@@ -17,14 +19,14 @@ function File(props) {
             </div>
             <div className={s.date_container_right}>
                 <div className={s.time_left}>
-                    {TimeValidation(time.hours) + ':' +
-                        TimeValidation(time.minutes) + ':' +
-                        TimeValidation(time.seconds)}
+                    {TimeValidation(hours) + ':' +
+                        TimeValidation(minutes) + ':' +
+                        TimeValidation(seconds)}
                 </div>
                 <div className={s.date_right}>
-                    {date.year + ':' +
-                        TimeValidation(date.month) + ':' +
-                        TimeValidation(date.day)}
+                    {year + ':' +
+                        TimeValidation(month) + ':' +
+                        TimeValidation(day)}
                 </div>
             </div>
         </div>
