@@ -2,7 +2,7 @@
         {
             "id":0,
             "name": "blender",
-            "type": "doc",
+            "type": "file",
             "time": {
                 "date":{
                     "year":2020,
@@ -19,7 +19,7 @@
         {
             "id":1,
             "name": "work",
-            "type": "pdf",
+            "type": "directory",
             "time": {
                 "date":{
                     "year":2019,
@@ -36,7 +36,7 @@
         {
             "id":2,
             "name": "cats",
-            "type": "pptx",
+            "type": "file",
             "time": {
                 "date":{
                     "year":2020,
@@ -53,7 +53,7 @@
         {
             "id":3,
             "name": "countries",
-            "type": "xlsx",
+            "type": "file",
             "time": {
                 "date":{
                     "year":2019,
@@ -70,7 +70,7 @@
         {
             "id":5,
             "name": "data",
-            "type": "doc",
+            "type": "file",
             "time": {
                 "date":{
                     "year":2018,
