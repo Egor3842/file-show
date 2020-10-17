@@ -3,3 +3,11 @@
     height: 85%;
     margin: 0 auto;
 }
+
+.header_container {
+    width: 80%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

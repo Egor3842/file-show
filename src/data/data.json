@@ -70,7 +70,7 @@
         {
             "id":5,
             "name": "data",
-            "type": "file",
+            "type": "directory",
             "time": {
                 "date":{
                     "year":2018,

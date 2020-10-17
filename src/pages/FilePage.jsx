@@ -5,6 +5,7 @@ import s from '../assets/styles/FilePage.module.css';
 import Title from '../components/Title';
 import Preloader from '../components/Preloader';
 import Notification from '../components/Notification';
+import Dictionary from '../components/Dictionary';
 
 function FilePage() {
 
@@ -30,21 +31,26 @@ function FilePage() {
     const AllFiles = files.map(file =>
         <File
             key={file.id}
-            name={file.name}
-            date={file.time.date}
-            time={file.time.time}
+            {...file}
         />)
 
     return (
         <div className={s.container}>
-            <Title
-                length={files.length}
-            />
-            {isFetching ?
-                <Preloader /> :
-                isError ?
-                    <Notification error="Ошибка при получении данных" /> :
-                    AllFiles}
+            <div className={s.header_container}>
+                <Title
+                    length={files.length}
+                />
+                <Dictionary />
+            </div>
+            <div>
+                {
+                    isFetching ?
+                        <Preloader /> :
+                        isError ?
+                            <Notification error="Ошибка при получении данных" /> :
+                            AllFiles
+                }
+            </div>
         </div>
     )
 }
